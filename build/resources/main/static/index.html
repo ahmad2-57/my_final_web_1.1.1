@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <link href="home_page_css.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="logo">
+    <img src="my_pages_web/home_page_web/logo-removebg-preview.png" alt="Your Logo">
+</div>
+
+<div class="login-box">
+    <img src="photos_web/user_photo.png" alt="User Image" class="user-image"> <!-- الصورة الكبيرة -->
+    <a id="loginLink" href="my_pages_web/sign_up_page/sign_up.html">تسجيل دخول</a> <!-- تسجيل الدخول يظهر هنا -->
+    <span id="userAccount" style="display: none;"></span> <!-- حساب المستخدم يظهر هنا -->
+</div>
+
+<div class="green-rectangle">
+    <a onclick="checkLoginAndRedirect(); return false;">START</a>
+</div>
+
+<div id="loginLinkOrUserName"></div>
+
+<ul>
+    <li>
+        <a>نظرة عامة</a>
+        <ul>
+            <li><a href="my_pages_web/nzre_3ama_page_web/nzre_3ama.html">ما هو الذكاء الاصطناعي</a></li>
+        </ul>
+    </li>
+
+    <li><a>الصانع</a>
+        <ul>
+            <li><a href="my_pages_web/I/who_i_am_page_web/who_i_am.html">من أنا</a></li>
+            <li><a>مراحل تطويري للموقع</a></li>
+        </ul>
+    </li>
+
+    <li><a>الدعم والاستفسار</a>
+        <ul>
+            <li><a href="my_pages_web/want_help/who_to_use_the_web_page_web/who_to_use_the_web.html"> كيفية استخدام الموقع</a></li>
+            <li><a href="my_pages_web/want_help/call_me_page_web/call_me.html"> إرسال ملاحظة لي </a></li>
+        </ul>
+    </li>
+    <li><a>الحساب</a>
+        <ul>
+            <li><a class="profile-button">عرض الملف الشخصي</a></li>
+            <li><a href="my_pages_web/sign_up_page/sign_up.html">تبديل الحساب</a></li>
+            <li><a href="my_pages_web/change_password_web/update_user.html">تغيير كلمة المرور</a></li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    // تنفيذ الكود عند تحميل الصفحة
+    document.addEventListener('DOMContentLoaded', function() {
+        const userId = localStorage.getItem('userId'); // استرجاع 'user_id' من localStorage
+        if (userId) {
+            // إرسال طلب AJAX لاسترجاع الايميل
+            $.ajax({
+                type: "GET",
+                url: "/user/findUserId/" + userId,
+                success: function(user) {
+                    // عرض الايميل المسترجع
+                    document.getElementById('loginLink').innerHTML =user.email; // تحديث نص تسجيل الدخول
+                    document.getElementById('loginLink').href = '#'; // تجنب اتصال الرابط بالصفحة الفعلية
+                },
+                error: function(error) {
+                    console.log("خطأ في جلب معلومات المستخدم: ", error);
+                    alert("لم يتم العثور على المستخدم.");
+                }
+            });
+        } else {
+            // إذا لم يكن المُعرف موجودًا، يعرض رابط تسجيل الدخول ويخفي حساب المستخدم
+            document.getElementById('loginLink').style.display = 'inline'; // إظهار رابط تسجيل الدخول
+            document.getElementById('userAccount').style.display = 'none'; // إخفاء حساب المستخدم
+        }
+
+        // استدعاء الدالة عند النقر على الزر
+        const profileButton = document.querySelector('.profile-button');
+        profileButton.addEventListener('click', checkAdminAndRedirect);
+    });
+
+    function checkLoginAndRedirect() {
+        const userId = localStorage.getItem('userId'); // استرجاع 'user_id' من localStorage
+        if (userId) {
+            // إذا كان المُعرف موجودًا، إعادة توجيه المستخدم إلى صفحة معينة
+            window.location.href = 'my_pages_web/AI_page_web/chosing_AI.html'; // عدل الرابط حسب صفحتك
+        } else {
+            // إذا لم يكن المُعرف موجودًا، إعادة توجيه المستخدم إلى صفحة تسجيل الدخول
+            window.location.href = 'my_pages_web/long_in_page_web/long_in.html'; // تأكد من صحة الرابط
+        }
+    }
+
+    function checkAdminAndRedirect() {
+        const admen = localStorage.getItem('admen'); // التحقق مما إذا كان المستخدم مسؤولًا أم لا
+        console.log("af"+admen); // طباعة الرد في وحدة التحكم
+
+        if (admen === 'true') {
+            // إذا كان المستخدم مسؤولًا، إعادة توجيهه إلى الصفحة المناسبة
+            window.location.href = 'my_pages_web/user_data_page_web/adman_v_data/admin_page.html';
+        } else {
+            // إذا لم يكن المستخدم مسؤولًا، إعادة توجيهه إلى الصفحة الأخرى
+            window.location.href = 'my_pages_web/user_data_page_web/user_data/user_data.html';
+        }
+    }
+</script>
+
+</body>
+</html>

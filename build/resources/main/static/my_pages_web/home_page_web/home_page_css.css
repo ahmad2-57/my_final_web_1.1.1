@@ -1,0 +1,103 @@
+
+        body {
+            background: url('photos_web/my_photo_4.jpg') no-repeat;
+            background-size: cover;
+            font-family: Arial;
+            color: white;
+            position: relative; /* تأكيد النسبية للجسم */
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        ul li {
+            float: left;
+            width: 200px;
+            height: 40px;
+            background-color: black;
+            opacity: .8;
+            line-height:40px;
+            text-align: center;
+            font-size: 20px;
+            margin-right: 2px
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        ul li:hover {
+            background-color: blue;
+        }
+
+        ul li ul li {
+            display:none;
+        }
+
+        ul li:hover ul li {
+            display:block;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .logo img {
+            filter: grayscale(100%);
+        }
+
+        .login-box {
+            width: 200px;
+            height: 40px;
+            background-color: blue;
+            border-radius: 15px;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            font-size: 16px;
+            position: absolute;
+            top: 30px;
+            left: calc(70% - 40px); /* تحسين الموقع */
+            transform: translate(-50%, -50%);
+        }
+
+        .user-image {
+            width: 45px; /* حجم الصورة المكبرة */
+            height: 45px; /* حجم الصورة المكبرة */
+            border-radius: 50%; /* تقديم الصورة دائرية */
+            position: absolute;
+            top: -3px; /* تعديل الموقع العمودي */
+            left: -5px; /* تحديد الموقع الأفقي */
+        }
+
+        .green-rectangle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 225px; /* تعديل العرض */
+    height: 100px; /* تعديل الارتفاع */
+    background-color: green;
+    border-radius: 5px;
+}
+.green-rectangle a {
+    width: 200px; /* تعديل العرض */
+    height: 70px; /* تعديل الارتفاع */
+    font-size: 70px; /* تعديل حجم الخط */
+    color: black; /* تغيير لون الكلام إلى اللون الأبيض */
+    text-align: center; /* توسيط النص أفقيًا */
+    line-height: 100px; /* تحديد خط النص وسط الارتفاع للمحافظة على وسطيته */
+}
+.login-box a {
+        color:black;
+        }
+
+
+
+    
