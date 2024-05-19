@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7ec2fc; /* تغيير لون الشاشة إلى اللون الأزرق */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+#user-info {
+    background-color: #fff;
+    width: 30%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+}
+
+#user-info p {
+    margin: 10px 0;
+}
+
+#user-info p strong {
+    font-weight: bold;
+}
+
+#user-info span {
+    font-weight: normal;
+    color: #666;
+}
+
+/* CSS للشعار */
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    float: left;
+    margin-left: 50px;
+}
+
+/* CSS للزر العائم */
+.btn-delete {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+}
+.btn-change {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.btn-back {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        display: block;
+        margin: 10px auto;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+.btn-back:hover,
+.btn-change:hover {
+    background-color: #0056b3;
+}
+
+/* تخصيص الرأس */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user_photo {
+    width: 80px;
+    float: right; /* جعل الصورة تظهر على اليمين */
+    margin: 25px;
+    border-radius: 50%;
+}

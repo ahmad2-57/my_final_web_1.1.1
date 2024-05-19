@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #112442; /* لون خلفية الصفحة */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff; /* لون خلفية المستطيل */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.header {
+    background-color: #008080; /* لون خلفية الهيدر */
+    padding: 20px;
+    text-align: left;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-image: url('logo.png'); /* خلفية اللوجو */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.content {
+    padding: 40px;
+    text-align: right;
+    color: #333;
+    float: right; /* يجعل العنصر يتأرجح إلى اليمين */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+img.profile-pic {
+    max-width: 250px;
+    border-radius: 50%;
+    margin: 25px 0 10px 25px; /* تم تغيير الموضع */
+    border: 6px solid #ffffff; /* لون الحاشية للصورة الشخصية */
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    float: right; /* يضع الصورة على اليمين */
+}
+
+.back-btn {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    background-color: #008080;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    float: left; /* يضع الزر على اليمين */
+}
+
+.back-btn:hover {
+    background-color: #005353;
+}
+p {
+    font-family: Arial, sans-serif; /* استخدام الخط Arial، مع الاحتياطي sans-serif */
+    font-size: 19px;
+    line-height: 1;
+    margin-bottom: 20px;
+    font-weight: 9000; /* جعل النص سميكًا بشكل أكبر */
+}
+
+
+
+

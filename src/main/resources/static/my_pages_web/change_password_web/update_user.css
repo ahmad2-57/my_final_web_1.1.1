@@ -1,0 +1,93 @@
+body {
+background: url('pa2.jpg') no-repeat center center fixed;
+    background-size: cover;    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* استخدام RGBA للتحكم في الشفافية */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.1); /* إضافة ظل للمربع */
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    text-align: right;
+    color: #333;
+    margin-bottom: 7px;
+}
+
+input, select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #35822c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+     background-color: #0c5703; /* اللون الجديد عند التحريك بالمؤشر */
+}
+
+/* تغيير لون الرابط عند التحريك بالمؤشر وتحديثه بسلاسة */
+a {
+    color: blue; /* لون افتراضي */
+    transition: color 0.3s ease; /* تطبيق تأثير التحول بسلاسة */
+}
+
+a:hover {
+    color: red; /* لون عند التحريك بالمؤشر */
+}
+
+/* تحديد موقع الرابط على اليمين */
+.container a {
+    text-align: right;
+    display: block; /* يجعل الرابط يمتد ليأخذ كل المساحة المتاحة في العرض */
+    text-decoration: none;
+}
+
+img {
+    margin-top: -10px; /* رفع الصورة بمقدار 10 بكسل لتكون موجودة أعلى الصفحة */
+    position: fixed; /* تثبيت الصورة في الزاوية اليسرى العلوية */
+    top: 0;
+    left: 0;
+}
+.btn-back {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        display: block;
+        margin: 10px auto;
+}
+.btn-back:hover {
+    background-color: #0056b3;
+}
