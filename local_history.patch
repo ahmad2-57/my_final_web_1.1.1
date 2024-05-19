@@ -1,0 +1,67 @@
+Index: src/main/resources/static/my_pages_web/want_help/call_me_page_web/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/static/my_pages_web/want_help/call_me_page_web/index.html b/src/main/resources/static/index.html
+rename from src/main/resources/static/my_pages_web/want_help/call_me_page_web/index.html
+rename to src/main/resources/static/index.html
+--- a/src/main/resources/static/my_pages_web/want_help/call_me_page_web/index.html	
++++ b/src/main/resources/static/index.html	(date 1709185426247)
+@@ -2,21 +2,21 @@
+ <html lang="ar">
+ <head>
+     <meta charset="UTF-8">
+-    <link href="../../../home_page_css.css" rel="stylesheet">
++    <link href="home_page_css.css" rel="stylesheet">
+ </head>
+ <body>
+ 
+ <div class="logo">
+-    <img src="../../home_page_web/logo-removebg-preview.png" alt="Your Logo">
++    <img src="my_pages_web/home_page_web/logo-removebg-preview.png" alt="Your Logo">
+ </div>
+ 
+ <div class="login-box">
+-    <img src="../../../photos_web/user_photo.png" alt="User Image" class="user-image"> <!-- الصورة الكبيرة -->
+-    <a href="../../sign_up_page/sign_up.html">تسجيل دخول</a>
++    <img src="photos_web/user_photo.png" alt="User Image" class="user-image"> <!-- الصورة الكبيرة -->
++    <a href="my_pages_web/sign_up_page/sign_up.html">تسجيل دخول</a>
+ </div>
+ 
+ <div class="green-rectangle">
+-    <a href="../../AI_page_web/AI.html">START</a>
++    <a href="my_pages_web/AI_page_web/AI.html">START</a>
+ </div>
+ 
+ 
+@@ -24,24 +24,24 @@
+     <li>
+         <a>نظرة عامة</a>
+         <ul>
+-            <li><a href="../../nzre_3ama_page_web/nzre_3ama.html">ما هو الذكاء الاصطناعي</a></li>
++            <li><a href="my_pages_web/nzre_3ama_page_web/nzre_3ama.html">ما هو الذكاء الاصطناعي</a></li>
+         </ul>
+     </li>
+ 
+     <li><a>الصانع</a>
+         <ul>
+-            <li><a href="../../I/who_i_am_page_web/who_i_am.html">من أنا</a></li>
++            <li><a href="my_pages_web/I/who_i_am_page_web/who_i_am.html">من أنا</a></li>
+             <li><a>مراحل تطويري للموقع</a></li>
+         </ul>
+     </li>
+ 
+     <li><a>الدعم والاستفسار</a>
+         <ul>
+-            <li><a href="../who_to_use_the_web_page_web/who_to_use_the_web.html"> كيفية استخدام الموقع</a></li>
+-            <li><a href="call_me.html"> إرسال ملاحظة لي </a></li>
++            <li><a href="my_pages_web/want_help/who_to_use_the_web_page_web/who_to_use_the_web.html"> كيفية استخدام الموقع</a></li>
++            <li><a href="my_pages_web/want_help/call_me_page_web/call_me.html"> إرسال ملاحظة لي </a></li>
+         </ul>
+     </li>
+-    <li><a href="../../user_data_page_web/user_data.html">تسجيل دخول</a></li>
++    <li><a href="my_pages_web/user_data_page_web/user_data.html">تسجيل دخول</a></li>
+ </ul>
+ 
+ </body>
