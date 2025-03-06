@@ -116,16 +116,4 @@ public class userController {
         }
     }
 
-//    @GetMapping("/correspondence/get/{userId}")
-//    public ResponseEntity<List<Correspondence>> getCorrespondenceByUserId(@PathVariable Long userId) {
-//        List<Correspondence> correspondenceList = userServices.getCorrespondenceByUserId(userId);
-//        return ResponseEntity.ok().body(correspondenceList);
-//    }
-//
-//    @PostMapping("/correspondence/save")
-//    public ResponseEntity<String> saveCorrespondence(@RequestBody Correspondence correspondence) {
-//        userServices.saveCorrespondence(correspondence.getUserId(), correspondence.userMessage(), correspondence.aiMessage());
-//        return ResponseEntity.ok("Correspondence saved successfully.");
-//    }
-
 }

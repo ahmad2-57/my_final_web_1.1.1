@@ -8,10 +8,10 @@ background: url('pa2.jpg') no-repeat center center fixed;
     margin: 50px auto;
     text-align: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* استخدام RGBA للتحكم في الشفافية */
+    background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.1); /* إضافة ظل للمربع */
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.1);
 }
 
 form {
@@ -45,29 +45,27 @@ button {
 }
 
 button:hover {
-     background-color: #0c5703; /* اللون الجديد عند التحريك بالمؤشر */
+     background-color: #0c5703;
 }
 
-/* تغيير لون الرابط عند التحريك بالمؤشر وتحديثه بسلاسة */
 a {
-    color: blue; /* لون افتراضي */
-    transition: color 0.3s ease; /* تطبيق تأثير التحول بسلاسة */
+    color: blue;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: red; /* لون عند التحريك بالمؤشر */
+    color: red;
 }
 
-/* تحديد موقع الرابط على اليمين */
 .container a {
     text-align: right;
-    display: block; /* يجعل الرابط يمتد ليأخذ كل المساحة المتاحة في العرض */
+    display: block;
     text-decoration: none;
 }
 
 img {
-    margin-top: -10px; /* رفع الصورة بمقدار 10 بكسل لتكون موجودة أعلى الصفحة */
-    position: fixed; /* تثبيت الصورة في الزاوية اليسرى العلوية */
+    margin-top: -10px;
+    position: fixed;
     top: 0;
     left: 0;
 }

@@ -1,47 +1,47 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #112442; /* لون خلفية الصفحة */
+    background-color: #112442;
     padding: 20px;
     margin: 0;
 }
 .header {
-    background-color: #008080; /* لون خلفية الهيدر */
+    background-color: #008080;
     padding: 10px 0;
     margin-bottom: 20px;
-    text-align: center; /* توسيط اللوجو */
+    text-align: center;
 }
 .header img {
-    width: 100px; /* حجم اللوجو */
+    width: 100px;
     height: auto;
 }
 .contact-info {
-    background-color: #ffffff; /* لون خلفية المعلومات */
+    background-color: #ffffff;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px; /* توسيع مساحة المعلومات */
-    margin: 0 auto; /* لوضعها في الوسط */
-    text-align: right; /* لتوجيه النصوص إلى اليمين */
-    position: relative; /* لتمكين وضع اللوجو بشكل مطلق داخل هذا العنصر */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: right;
+    position: relative;
 }
 h1 {
-    color: #008080; /* لون العنوان */
+    color: #008080;
 }
 p {
     color: #666;
     line-height: 1.6;
-    text-align: right; /* لتوجيه النصوص إلى اليمين */
+    text-align: right;
 }
 .contact-details {
     margin-top: 20px;
-    text-align: center; /* لتوجيه الزر وسط المحتوى */
+    text-align: center;
 }
 
 .contact-btn {
     display: inline-block;
-    background-color: #008080; /* لون زر الاتصال */
-    color: #ffffff; /* لون النص */
+    background-color: #008080;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -49,12 +49,12 @@ p {
     transition: background-color 0.3s;
 }
 .contact-btn:hover {
-    background-color: #005353; /* لون الزر عندما يتم تحويل المؤشر إليه */
+    background-color: #005353;
 }
 .contact-btn_2 {
     display: inline-block;
-    background-color: #00802f; /* لون زر الاتصال */
-    color: #ffffff; /* لون النص */
+    background-color: #00802f;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -62,29 +62,29 @@ p {
     transition: background-color 0.3s;
 }
 .contact-btn_2:hover {
-    background-color: #025420; /* لون الزر عندما يتم تحويل المؤشر إليه */
+    background-color: #025420;
 }
 .back-btn {
     display: block;
-    background-color: #008080; /* لون زر الرجوع */
-    color: #ffffff; /* لون النص */
+    background-color: #008080;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 20px;
     transition: background-color 0.3s;
-    position: absolute; /* تحديد الموضع */
-    bottom: 20px; /* المسافة من الأسفل */
-    left: 20px; /* المسافة من اليسار */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 .back-btn:hover {
-    background-color: #005353; /* لون الزر عندما يتم تحويل المؤشر إليه */
+    background-color: #005353;
 }
 .logo {
-    width: 100px; /* حجم اللوجو */
+    width: 100px;
     height: auto;
-    position: absolute; /* تحديد مكان اللوجو داخل العنصر */
-    top: 20px; /* المسافة من الأعلى */
-    left: 20px; /* المسافة من اليسار */
-    z-index: 1; /* لضمان ظهور اللوجو أمام المعلومات */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
 }

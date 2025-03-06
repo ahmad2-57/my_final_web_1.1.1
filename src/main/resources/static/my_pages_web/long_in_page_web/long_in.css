@@ -1,21 +1,21 @@
 body {
-    background: url('pa.jpg') no-repeat center center fixed;
+    background: url('../../photos_web/pa.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* لمنع التمرير الأفقي */
+    overflow-x: hidden;
 
 }
 
 
 .container {
-    background-color: rgba(255, 255, 255, 0.6); /* استخدام RGBA للتحكم في الشفافية */
+    background-color: rgba(255, 255, 255, 0.6);
     width: 300px;
-    margin: 100px 100px 50px auto; /* المسافة العلوية, اليمنى, السفلية, اليسار */
+    margin: 100px 100px 50px auto;
     text-align: center;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.1); /* إضافة ظل للمربع */
+    box-shadow: 0 4px 8px rgba(1, 1, 1, 0.1);
 }
 
 form {
@@ -49,27 +49,25 @@ button {
 }
 
 button:hover {
-     background-color: #0c5703; /* اللون الجديد عند التحريك بالمؤشر */
+     background-color: #0c5703;
 }
 
-/* تغيير لون الرابط عند التحريك بالمؤشر وتحديثه بسلاسة */
 a {
-    color: blue; /* لون افتراضي */
-    transition: color 0.3s ease; /* تطبيق تأثير التحول بسلاسة */
+    color: blue;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: red; /* لون عند التحريك بالمؤشر */
+    color: red;
 }
 
-/* تحديد موقع الرابط على اليمين */
 .container a {
     text-align: right;
-    display: block; /* يجعل الرابط يمتد ليأخذ كل المساحة المتاحة في العرض */
+    display: block;
     text-decoration: none;
 }
 img{
-    margin-top: -10px; /* رفع الصورة بمقدار 100 بكسل */
+    margin-top: -10px;
 }
 .qwe{
  position: fixed;
@@ -78,27 +76,27 @@ img{
     }
     .or-word {
         position: fixed;
-        bottom: 80px; /* يمكنك تعديل هذه القيمة حسب الاحتياج */
-        left: 140px; /* يمكنك ضبط موقع الكلمة بالنسبة لليمين/اليسار */
-        transform: translateX(-50%); /* يضبط موقع الكلمة بالنسبة لليمين/اليسار */
-        padding: 5px 10px; /* هوامش داخلية للكلمة */
-        border-radius: 5px; /* حدود دائرية للكلمة */
-        font-size: 45px; /* حجم النص */
-        color: #000; /* لون النص */
+        bottom: 80px;
+        left: 140px;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 45px;
+        color: #000;
     }
 
     .login-link, .home-button {
         position: fixed;
         bottom: 20px;
-        padding: 15px 25px; /* زيادة الحجم العمودي والأفقي للأزرار */
+        padding: 15px 25px;
         background-color: #008080;
         color: #ffffff;
-        text-decoration: none; /* إزالة الخط السفلي */
+        text-decoration: none;
         border-radius: 5px;
         transition: background-color 0.3s;
-        border: none; /* إزالة الحدود */
-        outline: none; /* إزالة التحديد الافتراضي */
-        font-size: 18px; /* تحديد حجم النص */
+        border: none;
+        outline: none;
+        font-size: 18px;
     }
 
     .login-link:hover, .home-button:hover {
@@ -113,8 +111,7 @@ img{
         right: 70px;
     }
 
-    /* تغيير لون النص عند التحريك بالمؤشر */
     .login-link a, .home-button a {
-        color: #000000; /* تغيير لون النص إلى الأبيض */
-        text-decoration: none; /* إزالة الخط السفلي */
+        color: #000000;
+        text-decoration: none;
     }

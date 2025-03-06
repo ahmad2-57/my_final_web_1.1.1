@@ -10,8 +10,6 @@ $(document).ready(function () {
             }
         }
 
-        //console.log("User ID: ", userId);
-
         $.ajax({
             type: "GET",
             url: "/user/findUserId/" + userId,

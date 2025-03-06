@@ -13,7 +13,6 @@ $(document).ready(function() {
             dataType: "json",
             data: JSON.stringify(userData),
             success: function(data) {
-                // بعد تسجيل الدخول بنجاح، قم بإجراء طلب للحصول على معرف المستخدم
                 $.ajax({
                     type: "GET",
                     url: "/user/findUserIdByEmail",
